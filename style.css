@@ -54,7 +54,10 @@ p {
     font-size: 16px;
     border: 0px solid;
     height: 49px;
-    box-shadow: rgba(0, 68, 255, 0.35) 0px 5px 15px;
+    color: white;
+    box-shadow: rgba(0, 68, 255, 0.35) 0px 
+    background: rgb(131,58,180);
+    background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
 }
 
 .text-showcase i {
