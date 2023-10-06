@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--LinkJS-->
+    <script src="https://kit.fontawesome.com/5508df4444.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </head>
@@ -22,16 +23,17 @@
     <!--Navbar-->
     <nav id="navbar" class="navbar navbar-expand-lg navbar-light sticky-top">
         <div class="container-fluid" style="height: 54px;">
-          <a id="navbrand-text-custom" class="navbar-brand navbrand-pd-custom" href="#">&lt/Tatsapon&gt</a>
+          <a id="navbrand-text-custom" class="navbar-brand navbrand-pd-custom" href="./index.html">&lt/Tatsapon&gt</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNavAltMarkup">
-            <div class="navbar-nav ms-auto navbar-pd-custom">
-              <a class="nav-link active underline-hover-effect" aria-current="page" href="#">หน้าหลัก</a>
-              <a class="nav-link underline-hover-effect" href="#">ประวัติส่วนตัว</a>
-              <a class="nav-link underline-hover-effect" href="#">ประวัติการศึกษา</a>
-              <a class="nav-link underline-hover-effect" href="#">ใบรับรอง</a>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto mx-5 navbar-pd-custom">
+              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#">Education</a>
+              <a class="nav-link" href="#">Project</a>
+              <a class="nav-link" href="#">Certificate</a>
             </div>
           </div>
         </div>
@@ -40,7 +42,31 @@
     <!--Header-->
       <header>
         <div class="container-fluid">
+            <div class="row g-0">
+                <!--TextShowcase-->
+                <div class="col-lg order-1">
+                    <div class="text-showcase">
+                        <h1>Hi There,<br>I'm Tatsapon.</h1>
+                        <h3 class="fw-bold">I am into <small class="fw-bold fs-2" style="color: rgb(0, 0, 209);">Web Devoloper</small></h3>
+                        <!--Button-->
+                        <button class="btn-lg btn-primary mt-2 px-4">About me
+                        <i class="fa-solid fa-arrow-down fa-sm"></i>
+                        </button>
+                        <div class="d-flex mt-4">
+                            <a href="https://www.facebook.com/NickzTatsapon/" class="me-2"><i class="fa-brands fa-facebook fa-2xl" style="color: black;"></i></a>
+                            <a href="https://www.instagram.com/ya.nickz/" class="mx-2"><i class="fa-brands fa-instagram fa-2xl" style="color: black;"></i></a>
+                            <a href="https://github.com/thochsapon86" class="mx-2"><i class="fa-brands fa-github fa-2xl" style="color: black;"></i></a>
+                        </div>
+                        <!--SocialMedia-->
 
+                    </div>
+
+                </div>
+                <!--ImgShowcase-->
+                <div class="col-lg order-2 img-showcase">
+                    <img src="./images/profile.jpg" alt="" width="500px" height="500px">
+                </div>
+            </div>
         </div>
       </header>
     <!--Header-->

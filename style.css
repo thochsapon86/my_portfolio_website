@@ -19,39 +19,66 @@ p {
     font-family: 'Kanit', sans-serif;
     font-family: 'Noto Sans Thai', sans-serif;
     font-family: 'Roboto Mono', monospace;
+    font-weight: bolder;
+    font-size: 17px;
 }
 
 .navbar-nav a {
-    font-size: 18px;
+    font-size: 17px;
     font-family: 'Inter', sans-serif;
     font-family: 'Kanit', sans-serif;
     font-family: 'Noto Sans Thai', sans-serif;
-}
-
-.navbrand-pd-custom {
-    padding-left: 10%;
+    font-weight: 600;
 }
 
 .navbar-pd-custom {
     padding-right: 10%;
 }
 
-.underline-hover-effect {
-    display: inline-block;
-    position: relative;
+.navbrand-pd-custom {
+    padding-left: 10%;
 }
 
-.underline-hover-effect::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 2px;
-    background-color: black;
-    transition: width 0.25s ease-out;
+.text-showcase {
+    margin-top: 21%;
+    padding-left: 50%;
+    padding-top: 4rem;
 }
 
-.underline-hover-effect:hover::before {
-    width: 100%;
+.text-showcase button {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-weight: bold;
+    border-radius: 999px;
+    font-size: 16px;
+    border: 0px solid;
+    height: 49px;
+    box-shadow: rgba(0, 68, 255, 0.35) 0px 5px 15px;
+}
+
+.text-showcase i {
+    padding-left: 2px;
+}
+
+.text-showcase h1{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.text-showcase h3{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+
+.img-showcase {
+    margin-top: 9%;
+}
+
+.img-showcase img {
+    border-radius: 125%;
 }
