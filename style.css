@@ -14,9 +14,44 @@ p {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 5px 3px;
 }
 
+#navbrand-text-custom {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+}
+
 .navbar-nav a {
     font-size: 18px;
     font-family: 'Inter', sans-serif;
     font-family: 'Kanit', sans-serif;
     font-family: 'Noto Sans Thai', sans-serif;
+}
+
+.navbrand-pd-custom {
+    padding-left: 10%;
+}
+
+.navbar-pd-custom {
+    padding-right: 10%;
+}
+
+.underline-hover-effect {
+    display: inline-block;
+    position: relative;
+}
+
+.underline-hover-effect::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.25s ease-out;
+}
+
+.underline-hover-effect:hover::before {
+    width: 100%;
 }
