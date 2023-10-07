@@ -52,12 +52,23 @@ p {
     font-weight: bold;
     border-radius: 999px;
     font-size: 16px;
-    border: 0px solid;
+    border: none;
     height: 49px;
     color: white;
-    box-shadow: rgba(0, 68, 255, 0.35) 0px 
     background: rgb(131,58,180);
     background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
+    transition: 0.5s;
+}
+
+.text-showcase button:hover {
+    filter: brightness(75%);
+    transform: translateY(5px);
+}
+
+.text-showcase button:hover i{
+    transition: 0.5s;
+    transform: translateX(3px);
+    transform: translateY(3px);
 }
 
 .text-showcase i {
@@ -85,6 +96,7 @@ p {
 .img-showcase img {
     border-radius: 125%;
 }
+
 
 .text-color-gradient {
     background: #121FCF;
