@@ -5,23 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!--Link_CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Kanit&family=Noto+Sans+Thai&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter&family=Kanit&family=Noto+Sans+Thai&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Kanit&family=Noto+Sans+Thai&family=Roboto+Mono&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--LinkJS-->
     <script src="https://kit.fontawesome.com/5508df4444.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 </head>
 <body>
     <!--Navbar-->
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-light sticky-top">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div class="container-fluid" style="height: 54px;">
           <a id="navbrand-text-custom" class="navbar-brand navbrand-pd-custom" href="./index.html">&lt/Tatsapon&gt</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,9 +27,9 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto mx-5 navbar-pd-custom">
-              <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-              <a class="nav-link" href="#">About</a>
-              <a class="nav-link" href="#">Education</a>
+              <a class="nav-link active" aria-current="page" href="#header">Home</a>
+              <a class="nav-link" href="#about-me">About</a>
+              <a class="nav-link" href="#education">Education</a>
               <a class="nav-link" href="#">Project</a>
               <a class="nav-link" href="#">Certificate</a>
             </div>
@@ -40,39 +38,75 @@
       </nav>
     <!--Navbar-->
     <!--Header-->
+    <section id="header">
       <header>
-        <div class="container-fluid">
+        <div class="container-fluid" style="background-color: rgb(245, 245, 245);height: 900px;">
             <div class="row g-0">
                 <!--TextShowcase-->
                 <div class="col-lg order-1">
                     <div class="text-showcase">
                         <h1>Hi There,<br>I'm Tatsapon.</h1>
-                        <h3 class="fw-bold ">I am into <small class="fw-bold fs-2 text-color-gradient">Web Devoloper</small></h3>
+                        <h3 class="fw-bold">I am into <small class="fw-bold fs-2 text-color-gradient">Web Devoloper</small></h3>
                         <!--Button-->
-                        <button class="btn-lg mt-2 px-4">About me
-                        <i class="fa-solid fa-arrow-down fa-sm"></i>
-                        </button>
+                        <div class="btn-about-me">
+                        <a class="btn px-4 mt-2 d-flex" href="#about-me">About me
+                        <i class="fa-solid fa-arrow-down fa-sm d-flex"></i>
+                        </a>
+                        </div>
+                        <!--SocialMedia-->
                         <div class="d-flex mt-4">
                             <a href="https://www.facebook.com/NickzTatsapon/" class="me-2"><i class="fa-brands fa-facebook fa-2xl" style="color: black;"></i></a>
                             <a href="https://www.instagram.com/ya.nickz/" class="mx-2"><i class="fa-brands fa-instagram fa-2xl" style="color: black;"></i></a>
                             <a href="https://github.com/thochsapon86" class="mx-2"><i class="fa-brands fa-github fa-2xl" style="color: black;"></i></a>
                         </div>
-                        <!--SocialMedia-->
-
                     </div>
-
                 </div>
                 <!--ImgShowcase-->
                 <div class="col-lg order-2 img-showcase">
-                    <img src="./images/profile.jpg" alt="" width="500px" height="500px">
+                    <img class="img-responsive" src="./images/profile.png" alt="" width="500px" height="500px">
                 </div>
             </div>
         </div>
       </header>
+    </section>
     <!--Header-->
-    <!--AoS Setup-->
+    <!--About me-->
+      <section id="about-me">
+        <div class="container-fluid" style="height: 500px;">
+          <header class="text-center">
+              <h1 class="mt-3 fw-bold text-color-gradient"><i class="fa-solid fa-user fa-sm"></i>
+                About <span>Me</span></h1>
+          </header>
+          <!--Aboutme Article-->
+          <div class="row d-flex" style="margin-top: 5%;align-items: center;">
+            <div class="col-md-6 d-flex justify-content-center" style="padding-left: 19%;">
+                <img src="./images/profile.jpg" alt="" class="round" width="300px" 
+                style="">
+            </div>
+            <div class="col-md-6">
+                <h3>สวัสดีครับ ผม ทัศน์พล ชัยยันต์</h3>
+                <h4>ผมได้รู้จักคอมพิวเตอร์ตั้งแต่ยังเด็ก และก็ชื่นชอบเกี่ยวกับเรื่องคอมพิวเตอร์ตั้งแต่ยังเด็กด้วย
+                ผมสนใจในการทำเว็บไซต์ เมื่อผมยังศึกษาอยู่ระดับชั้น ปวช.2 ดังนั้น
+                เว็บไซต์นี้จึงเป็นพื้นที่แสดงความสามารถทางด้านการพัฒนาเว็บไซต์ของผมครับ
+                </h4>
+                <h4 class="fs-5 fw-bold mt-3" style="color: blue;">Email: <small class="fw-normal" style="color: black;"> candytf822@gmail.com</small></h4>
+            </div>
+          </div>
+        </div>
+      </section>
+    <!--Education-->
+      <section id="education">
+        <header style="margin-top: 2%;">
+          <h1 class="text-center text-color-gradient"><i class="fa-solid fa-school fa-sm"></i>
+          Education
+          </h1>
+        </header>
+      </section>
+    <!--AoS Setup-->  
     <script>
         AOS.init();
       </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
 </body>
 </html>

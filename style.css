@@ -45,7 +45,7 @@ p {
     padding-top: 4rem;
 }
 
-.text-showcase button {
+.btn-about-me a {
     font-family: 'Inter', sans-serif;
     font-family: 'Kanit', sans-serif;
     font-family: 'Noto Sans Thai', sans-serif;
@@ -53,26 +53,30 @@ p {
     border-radius: 999px;
     font-size: 16px;
     border: none;
+    align-items: center;
+    width: 145px;
     height: 49px;
     color: white;
     background: rgb(131,58,180);
     background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
     transition: 0.5s;
+    text-decoration: none;
 }
 
-.text-showcase button:hover {
+.btn-about-me a:hover {
     filter: brightness(75%);
     transform: translateY(5px);
 }
 
-.text-showcase button:hover i{
-    transition: 0.5s;
-    transform: translateX(3px);
+.btn-about-me a:hover i{
+    transition: 0.4s;
+    margin-left: 3%;
     transform: translateY(3px);
 }
 
-.text-showcase i {
-    padding-left: 2px;
+.btn-about-me i {
+    margin-top: 1%;
+    margin-left: 8%;
 }
 
 .text-showcase h1{
@@ -103,4 +107,29 @@ p {
     background: linear-gradient(to right, #121FCF 0%, #CF1512 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+#about-me header i {
+    margin-right: 0.2%;
+}
+
+#about-me img {
+    border-radius: 10%;
+}
+
+#about-me h3, h4 {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+
+#about-me h3 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 2%;
+}
+
+#about-me h4 {
+    padding-right: 40%;
+    font-size: 25px;
 }
