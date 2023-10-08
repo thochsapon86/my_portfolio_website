@@ -184,4 +184,5 @@ p {
 .card-custom:hover{
     transition: 0.2s;
     box-shadow: rgba(0, 0, 255, 0.2) 0px 7px 29px 0px;
+    transform: translateY(1%);
 }
