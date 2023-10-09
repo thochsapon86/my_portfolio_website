@@ -251,3 +251,24 @@ p {
 #project .padding-custom {
     padding: 5%;
 }
+
+#certificate .cer-img {
+    margin: 1.5% 1.5%;
+    width: 43%;
+    height: auto;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: 0.2s;
+}
+
+#certificate .cer-img:hover{
+    transition: 0.2s;
+    transform: translateY(-3%);
+    transform: scale(1.2);
+    box-shadow: rgba(0, 0, 255, 0.2) 0px 7px 29px 0px;
+}
+
+#certficate h3 {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Noto Sans Thai', sans-serif;
+}
