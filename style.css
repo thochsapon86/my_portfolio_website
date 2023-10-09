@@ -96,6 +96,8 @@ p {
 
 .img-showcase {
     margin-top: 9%;
+    width: 100%;
+    height: auto;
 }
 
 .img-showcase img {
@@ -135,14 +137,23 @@ p {
     font-size: 25px;
 }
 
-.col-custom {
+#about-me img {
+    filter: grayscale(100%);
+}
+
+#about-me img:hover {
+    transition: 0.5s;
+    filter: grayscale(0);
+}
+
+#education .col-custom {
     padding-top: 3%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 
-.col-custom h3{
+#education .col-custom h3{
     font-family: 'Inter', sans-serif;
     font-family: 'Kanit', sans-serif;
     font-family: 'Noto Sans Thai', sans-serif;
@@ -152,7 +163,7 @@ p {
     font-size: 26px;
 }
 
-.col-custom h4{
+#education .col-custom h4{
     font-family: 'Inter', sans-serif;
     font-family: 'Kanit', sans-serif;
     font-family: 'Noto Sans Thai', sans-serif;
@@ -161,16 +172,19 @@ p {
     margin-left: 5%;
 }
 
-.col-custom h6{
+#education .col-custom h6{
     font-family: 'Inter', sans-serif;
     font-family: 'Kanit', sans-serif;
     font-family: 'Noto Sans Thai', sans-serif;
     font-weight: bold;
-    margin-top: 10%;
-    margin-left: 40%;
+    text-align: end;
+    vertical-align: bottom;
+    padding-right: 3%;
+    align-self: self-end;
+    padding-top: 18%;
 }
 
-.card-custom {
+#education .card-custom {
     display: flex;
     margin: 1.7% auto;
     margin-bottom: 0;
@@ -181,8 +195,56 @@ p {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.card-custom:hover{
+#education .card-custom:hover{
     transition: 0.2s;
     box-shadow: rgba(0, 0, 255, 0.2) 0px 7px 29px 0px;
     transform: translateY(1%);
+}
+
+#project .card-custom {
+    display: flex;
+    flex-direction: column;
+    margin: 1.7% auto;
+    margin-bottom: 2%;
+    width: 23%;
+    height: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#project .card-custom:hover{
+    transition: 0.2s;
+    box-shadow: rgba(0, 0, 255, 0.2) 0px 7px 29px 0px;
+    transform: translateY(-3%);
+    
+}
+
+
+
+#project h3 {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Noto Sans Thai', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 20px;
+}
+
+#project h6 {
+    font-family: 'Inter', sans-serif;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Noto Sans Thai', sans-serif;
+    padding-top: 3%;
+    margin-bottom: 6%;
+    color: gray;
+    text-align: center;
+}
+
+#project p {
+    text-align: center;
+}
+
+#project .padding-custom {
+    padding: 5%;
 }
