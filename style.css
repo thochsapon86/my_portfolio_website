@@ -145,6 +145,7 @@ p {
 #about-me img:hover {
     transition: 0.5s;
     filter: grayscale(0);
+    transform: scale(1.2);
 }
 
 #education .col-custom {
@@ -271,4 +272,12 @@ p {
     font-family: 'Inter', sans-serif;
     font-family: 'Kanit', sans-serif;
     font-family: 'Noto Sans Thai', sans-serif;
+}
+
+#skills i{
+    transition: 0.2s;
+}
+#skills i:hover{
+    transition: 0.2s;
+    transform: scale(1.4);
 }
