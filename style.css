@@ -96,7 +96,7 @@ p {
 }
 
 .img-showcase {
-    margin-top: 9%;
+    margin-top: 14%;
     width: 100%;
     height: auto;
 }
@@ -310,4 +310,10 @@ p {
 
 #socials a:hover:nth-child(3) i {
     color: rgb(149, 0, 248);
+}
+
+/* media-zone */
+
+@media screen {
+    
 }
