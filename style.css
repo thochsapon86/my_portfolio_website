@@ -321,7 +321,55 @@ p {
 #aboutme-img {
     padding-left: 19%;
 }
+
+.school-img {
+    width: 100%;
+    height: auto;
+}
+
+#header-container {
+    height: 900px;
+}
+
+.footer-container {
+    margin-top: 5%;
+    width: 100%;
+    background-color: #040D12;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1%;
+    color: #F0F0F0;
+}
+
+.footer-container nav {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer-container h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5%;
+}
+
+.footer-container nav a {
+    padding: 0 0.6%;
+    color: #F0F0F0;
+}
+
+#footer-nav2 ul li {
+    list-style: none;
+    padding: 0 1%;
+}
+
+#footer-nav2 ul li a {
+    text-decoration: none;
+}
+
 /* media-zone */
+/*---------------------*/
 /* Nest Hub Max*/
 @media (max-width: 1280px) and (max-height: 800px) {
     .col-custom h6{
@@ -348,7 +396,7 @@ p {
         transition: 0.2s;
     }
 }
-
+/*---------------------*/
 /* Nest Hub */
 @media (max-width: 1024px) and (max-height: 600px) {
     /*Header*/
@@ -364,6 +412,9 @@ p {
     }
     .text-showcase h3{
         font-size: 4vh;
+    }
+    #header-container {
+        height: 540px;
     }
     /*About me*/
     #aboutme-img {
@@ -381,3 +432,4 @@ p {
         align-self: self-end;
     }
 }
+/*---------------------*/
