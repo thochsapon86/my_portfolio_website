@@ -282,3 +282,32 @@ p {
     transition: 0.2s;
     transform: scale(1.4);
 }
+
+#socials a {
+    margin: 0 2%;
+}
+
+#socials a i {
+    color: black;
+    transition: 0.3s;
+    width: 100%;
+}
+
+#socials a:hover{
+    transition: 0.3s;
+    transform: scale(2);
+    padding-top: 4%;
+    margin-right: 5%;
+}
+
+#socials a:hover:nth-child(1) i{
+    color:#0000ff;
+}
+
+#socials a:hover:nth-child(2) i {
+    color: rgb(248, 57, 159);
+}
+
+#socials a:hover:nth-child(3) i {
+    color: rgb(149, 0, 248);
+}
